@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+body{
+    overflow-x: hidden;
+    font-family: 'ZenMaruGothic-Medium';
+}
+
+
+.main_logo{
+    justify-content: center;
+    display: flex;
+}
+
+h1{
+    margin: 30px 0; 
+    width: 30%;
+}
+
+.concept_title {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'ZenMaruGothic-Medium';
+    margin-bottom: 70px;
+    opacity: 0; /* 最初は見えないようにする */
+}
+
+.concept_title.is-animated {
+    animation: concept_title 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* 背景のアニメーション */
+.concept_title.is-animated .bg-wrap::before {
+    animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    background: #5AC2DC;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+}
+
+.concept_title .bg-wrap {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.concept_title .bg-wrap .inn {
+    color: #fff;
+    display: inline-block;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* アニメーションの定義 */
+@keyframes concept_title {
+    0% {
+        opacity: 0;
+        transform: scaleX(0) translateX(-5%);
+    }
+    30% {
+        transform: scaleX(1) translateX(0);
+    }
+    100% {
+        transform: scaleX(1) translateX(0);
+        opacity: 1;
+    }
+}
+
+section{
+    margin: 0 13%;
+}
+
+.section_displayflex{
+    display: flex;
+    justify-content: center;
+}
+
+.section_displayflex img{
+    width: 30%;
+}
+
+.section_displayflex_title{
+    font-family: 'ZenMaruGothic-Medium';
+    white-space: nowrap;
+    padding-top: 30px;
+    font-size: 23px;
+}
+
+.P_title{
+    margin: 60px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.P_title p{
+    padding-bottom: 30px;
+    font-family: 'ZenMaruGothic-Medium';
+}
+
+
+.Features{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.running_girl{
+    width: 40%;
+}
+
+h2{
+    padding-top: 30px;
+    font-size: 40px;
+    border-bottom:3px solid #5AC2DC;
+    padding-bottom: 2px;
+    display: inline-block;
+    margin-bottom: 40px;  
+}
+
+.Smartphone_img_1_display_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.Smartphone_img_1{
+    margin-top: 90px;
+}
+
+.Features_Content_img_top{
+    display: flex;
+}
+
+.Features_Content_img_top img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.Features_top_img.fadeup.is-animated {
+    animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@keyframes fadeup {
+    0% {
+    transform: translateY(30px);
+    opacity: 0;
+}
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+.Features_Content_top_title{
+    padding-bottom: 5px;
+    font-size: 25px;
+    margin-bottom: 0 13px;
+}
+
+.Features_Content_top_text{
+    margin: 0 25%;
+    margin-bottom: 30px;
+}
+
+.application_explanation_color{
+    background-color: #5AC2DC;
+    height: 100%;
+}
+
+.application_explanation{
+    margin: 0 15%;
+}
+
+.Smartphone_img_1{
+    margin-bottom: 90px;
+    width: 30%;
+}
+
+h3{
+    margin-top: 170px;
+    font-size: 40px;
+    font-family: 'ZenMaruGothic-Medium';
+    white-space: nowrap;
+}
+
+.application_explanation_color_2{
+    margin: 0 13%;
+}
+
+.Smartphone_img_1_text{
+    margin-left: 20%;
+}
+
+.Smartphone_img_1_text p{
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.Smartphone_img_1_text img{
+    width: 40%;
+    background-color: #fff;
+}
+
+
+h4{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'ZenMaruGothic-Medium';
+    margin-bottom: 40px;
+    
+}
+
+.application_explanation_display_flex{
+    display: flex;
+}
+
+.application_explanation_display_text{
+    margin: 40px 8% 0 0;
+}
+
+.img-2{
+    width: 50%;
+    margin-bottom: 70px;
+}
+
+h5{
+    font-size: 32px;
+    padding-bottom: 30px;
+    white-space: nowrap;
+}
+
+.application_explanation_display_text p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.new_topic{
+    width: 40%;
+    margin-right: 10%;
+}
+
+.column_text h5{
+    margin-top: 120px;
+}
+
+.column_div{
+    margin-top: 70px;
+    display: flex;
+}
+
+.column_text p{
+    font-size: 20px;
+    line-height: 2;
+}
+/*---プレゼンテーション---*/
+
+.presentation{
+    background-color: #5AC2DC;
+    line-height: 2;
+    
+}
+
+.presentation_div{
+    margin-top: 50px;
+}
+.presentation_margin{
+    margin:0 13%;
+}
+
+h6{
+    margin: 0 33%;
+    font-size: 40px;
+    border-bottom:3px solid #fff;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.presentation_text{
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+iframe{
+    margin: 70px 0;
+}
+
+.concept_div{
+    margin-top: 50px;
+}
+
+.bottom_img{
+    width: 30%;
+}
+
+h8{ 
+    margin-top: 70px;
+    margin: 0 14.5%;
+    font-size: 80px;
+    font-family: 'ZenMaruGothic-Medium';
+}
+
+.concept_text_jp{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.img_display_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom_illustration{
+    margin-left: 5%;
+    width: 30%;
+}
+
+/*---footer---*/
+
+footer{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #5AC2DC;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/*---スクロール---*/
+
+.pagetop {
+    border-color: #000000;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .3s;
+    color: #5AC2DC;
+    background: #fff;
+    font-size: 30px;
+  /*   デフォルトは非表示 */
+    opacity: 0;
+}
+.pagetop:hover {
+    box-shadow: 0 0 10px #0067C0;
+}
+
