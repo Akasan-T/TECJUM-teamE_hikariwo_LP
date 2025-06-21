@@ -1,4 +1,4 @@
-# TECJUM_teamE_hikariwo
+# TECJUM_teamE_hikariwo_LP
 KADOKAWAドワンゴ情報工科学院内、冬の開発イベント『Tech Jum』<br>
 サントリーグローバルイノベーションセンター様との産学連携でのチーム制作
 
