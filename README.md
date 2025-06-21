@@ -26,7 +26,7 @@ KADOKAWAドワンゴ情報工科学院内、冬の開発イベント『Tech Jum�
   Hikariwoデザイン <br>
   ランディングページの制作 <br>
 
-## 使用言語
+### 使用言語
   HTML/CSS:サイトデザインで使用
   <br>
   JavaScript:サイトアニメーションで使用
@@ -34,6 +34,7 @@ KADOKAWAドワンゴ情報工科学院内、冬の開発イベント『Tech Jum�
 
 # view
 
+#### ランディングページ
 <p>
   <img src="imgs/LP_topview.png" width="500">
   <img src="imgs/mockuper.png" width="500">
