@@ -30,3 +30,11 @@ KADOKAWAドワンゴ情報工科学院内、冬の開発イベント『Tech Jum�
   HTML/CSS:サイトデザインで使用
   <br>
   JavaScript:サイトアニメーションで使用
+
+
+# view
+
+<p>
+  <img src="imgs/LP_topview.png" width="500">
+  <img src="imgs/mockuper.png" width="500">
+</p>
